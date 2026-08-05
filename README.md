@@ -11,6 +11,11 @@ A collection of [Claude Code](https://claude.com/claude-code) Skills — package
 | [`coding-discipline`](skills/coding-discipline/SKILL.md) | Behavioral guardrails for writing, reviewing, or refactoring code — surface assumptions instead of guessing, default to the smallest working solution, make surgical edits, define "done" before starting. |
 | [`frontend-taste`](skills/frontend-taste/SKILL.md) | A workflow for frontend visual work — landing pages, dashboards, portfolios, components — covering how to read a design brief, when to reach for a real design system vs. a custom aesthetic, how to make animation decisions, and a pre-ship quality checklist. |
 | [`skill-authoring`](skills/skill-authoring/SKILL.md) | Guidance for writing a new Claude Code skill well — deciding whether something should be a skill at all, writing a description that actually triggers, keeping `SKILL.md` short with reference files for overflow, and a pre-ship hygiene pass. |
+| [`debugging-discipline`](skills/debugging-discipline/SKILL.md) | Root-causing a bug instead of patching the symptom — reproduce before touching code, localize before diagnosing, one hypothesis at a time, and a regression test before calling it fixed. |
+| [`git-hygiene`](skills/git-hygiene/SKILL.md) | Commit and PR craft — one coherent change per commit, writing messages for someone with no other context, sizing a PR for one sitting, and when to squash vs. preserve history. |
+| [`backend-api-taste`](skills/backend-api-taste/SKILL.md) | The `frontend-taste` counterpart for APIs — naming and error-shape consistency, pagination, versioning, idempotency, and status codes that mean what they say. |
+| [`a11y-pass`](skills/a11y-pass/SKILL.md) | An accessibility-specific review pass — keyboard navigation, focus management, ARIA/semantics, and form labeling — covering what a purely visual review misses. |
+| [`test-discipline`](skills/test-discipline/SKILL.md) | Writing tests worth trusting — one failure reason per test, mocking at the boundary not the middle, what deserves a test vs. doesn't, and confirming a test can actually fail. |
 
 ## What a skill is
 
@@ -48,22 +53,29 @@ Claude Code looks for skills in two places:
 - **Per-project**: `.claude/skills/<skill-name>/` inside a specific project — only active in that project.
 - **Global**: `~/.claude/skills/<skill-name>/` — active in every project for your user.
 
-To install a skill from this repo, copy or symlink its folder into one of those locations.
+To install a skill from this repo, copy or symlink its folder into one of those locations. All of these are general-purpose (not tied to one project), so a global install is the usual choice — reach for per-project only when you want a skill scoped to a single repo.
 
-**Global install (recommended for these two — they're general-purpose, not project-specific):**
+**Global install — one specific skill:**
 
 ```bash
 mkdir -p ~/.claude/skills
-ln -s /path/to/Chaitanya-Skills/skills/coding-discipline ~/.claude/skills/coding-discipline
-ln -s /path/to/Chaitanya-Skills/skills/frontend-taste ~/.claude/skills/frontend-taste
+ln -s /path/to/Chaitanya-Skills/skills/<skill-name> ~/.claude/skills/<skill-name>
+```
+
+**Global install — everything in this repo at once:**
+
+```bash
+mkdir -p ~/.claude/skills
+for dir in /path/to/Chaitanya-Skills/skills/*/; do
+  ln -s "$dir" ~/.claude/skills/"$(basename "$dir")"
+done
 ```
 
 **Per-project install:**
 
 ```bash
 mkdir -p /path/to/your-project/.claude/skills
-cp -r /path/to/Chaitanya-Skills/skills/coding-discipline /path/to/your-project/.claude/skills/
-cp -r /path/to/Chaitanya-Skills/skills/frontend-taste /path/to/your-project/.claude/skills/
+cp -r /path/to/Chaitanya-Skills/skills/<skill-name> /path/to/your-project/.claude/skills/
 ```
 
 Symlinking (rather than copying) means `git pull` in this repo updates the skill everywhere it's linked, without reinstalling.
