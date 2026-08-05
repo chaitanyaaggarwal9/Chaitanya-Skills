@@ -1,6 +1,9 @@
 ---
+# Must match the folder name exactly
 name: coding-discipline
+# Matched against the live request — the highest-leverage line in the file
 description: Use when planning, writing, reviewing, or refactoring code — even if the user didn't ask for a style guide explicitly — to avoid common LLM failure modes, namely overcomplicating simple tasks, silently guessing at ambiguous requirements, rewriting code nobody asked to change, or declaring something "done" without a way to check.
+# License this skill's content is released under
 license: MIT
 ---
 

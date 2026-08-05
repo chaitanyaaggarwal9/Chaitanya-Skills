@@ -23,8 +23,11 @@ Each skill is a folder containing a `SKILL.md` file with YAML frontmatter and a 
 
 ```markdown
 ---
+# Must match the folder name exactly
 name: skill-name
+# Matched against the live request — the highest-leverage line in the file
 description: When Claude should reach for this skill, written so it matches how a user would phrase the request.
+# License this skill's content is released under
 license: MIT
 ---
 

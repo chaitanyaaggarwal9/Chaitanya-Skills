@@ -1,6 +1,9 @@
 ---
+# Must match the folder name exactly
 name: skill-authoring
+# Matched against the live request — the highest-leverage line in the file
 description: Use when writing a new Claude Code skill (a SKILL.md file), turning a repeated prompt or workflow into one, or reviewing/improving an existing skill's frontmatter, description, or structure. Triggers on requests like "write a skill for X", "turn this into a skill", "create a SKILL.md", or "why isn't my skill triggering".
+# License this skill's content is released under
 license: MIT
 ---
 

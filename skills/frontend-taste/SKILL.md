@@ -1,6 +1,10 @@
 ---
+# Must match the folder name exactly
 name: frontend-taste
+# Matched against the live request — the highest-leverage line in the file
 description: Use when designing, building, redesigning, or reviewing frontend visual work — landing pages, portfolios, marketing sites, dashboards, product UI, components, or animations. Covers reading a design brief correctly, picking a real design system vs. building a custom aesthetic, avoiding generic "AI-slop" defaults, animation decision-making, and a pre-ship quality pass. Trigger this even when the user just asks for "a landing page" or "make this look better" without naming design taste explicitly.
+# License this skill's own text is released under — the adapted sources
+# in ## Credits below each carry their own original license
 license: MIT
 ---
 

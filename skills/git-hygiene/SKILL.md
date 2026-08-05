@@ -1,6 +1,9 @@
 ---
+# Must match the folder name exactly
 name: git-hygiene
+# Matched against the live request — the highest-leverage line in the file
 description: Use when writing a commit message, deciding how to split a diff, opening a PR, or reviewing commit/branch history before merging. Triggers on "commit this", "write a commit message", "open a PR", "should I squash this", or a diff that mixes unrelated changes.
+# License this skill's content is released under
 license: MIT
 ---
 

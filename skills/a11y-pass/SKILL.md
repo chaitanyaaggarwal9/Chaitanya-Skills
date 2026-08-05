@@ -1,6 +1,9 @@
 ---
+# Must match the folder name exactly
 name: a11y-pass
+# Matched against the live request — the highest-leverage line in the file
 description: Use when building or reviewing a web UI for accessibility — keyboard navigation, screen reader semantics, focus management, or an explicit "accessibility pass"/"a11y review" request. Complements frontend-taste's craft-floor contrast check with the parts a purely visual review misses.
+# License this skill's content is released under
 license: MIT
 ---
 

@@ -22,8 +22,11 @@ skills/<skill-name>/
 
 ```markdown
 ---
-name: skill-name              # must match the folder name exactly
+# Must match the folder name exactly
+name: skill-name
+# Matched against the live request — the highest-leverage line in the file
 description: When Claude should reach for this — written the way a user would phrase the request.
+# License this skill's content is released under
 license: MIT
 ---
 

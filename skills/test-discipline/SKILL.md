@@ -1,6 +1,9 @@
 ---
+# Must match the folder name exactly
 name: test-discipline
+# Matched against the live request — the highest-leverage line in the file
 description: Use when writing tests, reviewing test coverage, or judging whether a test is worth keeping — "write tests for X", adding tests alongside a feature or bugfix, or reviewing an existing suite for redundancy or flakiness.
+# License this skill's content is released under
 license: MIT
 ---
 

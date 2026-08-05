@@ -1,6 +1,9 @@
 ---
+# Must match the folder name exactly
 name: backend-api-taste
+# Matched against the live request — the highest-leverage line in the file
 description: Use when designing, building, or reviewing a backend API — REST or GraphQL endpoints, request/response shapes, error formats, pagination, versioning. Triggers on "design an API", "add an endpoint", "how should this response look", even when the user doesn't name a spec.
+# License this skill's content is released under
 license: MIT
 ---
 
