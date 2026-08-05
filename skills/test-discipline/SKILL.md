@@ -9,7 +9,7 @@ license: MIT
 
 # Test Discipline
 
-A test is a claim about behavior. The habits below are about making sure that claim is true, checkable, and worth making — not about hitting a coverage number.
+`coding-discipline`'s "define done" habit says a test should exist. This is about making sure the test itself is worth trusting: a test is a claim about behavior, and the habits below make sure that claim is true, checkable, and worth making — not about hitting a coverage number.
 
 ## 1. A test should fail for exactly one reason
 

@@ -71,7 +71,7 @@ The two things that make a skill *checkable* — someone can tell whether it was
 - Real UTF-8 punctuation (em dash `—`, arrows `→`), typed or pasted cleanly — not the single mangled Latin-1 character that em dashes and arrows both corrupt into after a lossy copy-paste. If this repo has `scripts/validate_skills.py`, run it.
 - `name` matches the folder name exactly.
 - Every `reference/*.md` path mentioned actually resolves.
-- No overlap with an existing skill's trigger — if two skills could plausibly both fire on the same request, either merge them or narrow both descriptions.
+- No *undocumented* overlap with an existing skill's trigger. If two skills could plausibly both fire on the same request, that's fine when it's a real general-layer/specialist-layer relationship (e.g. `coding-discipline` + `debugging-discipline`) rather than accidental duplication — but name it explicitly, in both directions: the specialist should open by saying what general skill it sits under, and the general skill should say which specialists go deeper on which part of it. If neither skill can name why the other one also fires, merge them or narrow both descriptions instead.
 - Test it: invoke the skill against a real request and check the output actually reflects the instructions, not just that the file parses.
 
 ## 7. Why this matters more for skills than for most code

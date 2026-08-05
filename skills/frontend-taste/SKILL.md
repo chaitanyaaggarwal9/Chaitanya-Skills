@@ -12,6 +12,8 @@ license: MIT
 
 A workflow for shipping frontend work that reads as considered rather than templated: read the brief correctly, commit to a direction, build against real constraints, then run one disciplined quality pass before calling it done.
 
+`a11y-pass` goes deeper on accessibility than section 5's craft-floor check alone covers. `backend-api-taste` is the equivalent workflow for the API side of the same product.
+
 ## 1. Read the brief before touching code
 
 Most generic-looking output happens because the brief never got read carefully — the model jumped straight to a default aesthetic. Before writing anything, work out:

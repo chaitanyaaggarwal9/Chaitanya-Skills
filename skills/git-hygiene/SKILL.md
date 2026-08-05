@@ -9,7 +9,7 @@ license: MIT
 
 # Git Hygiene
 
-History is documentation someone reads later under pressure — mid-incident, mid-bisect, mid-review. Treat it with the same care as the code it records.
+`coding-discipline` covers the code itself; this covers the commit and PR that carry it. History is documentation someone reads later under pressure — mid-incident, mid-bisect, mid-review. Treat it with the same care as the code it records.
 
 ## 1. One commit, one coherent change
 

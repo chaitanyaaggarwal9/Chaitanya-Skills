@@ -11,6 +11,8 @@ license: MIT
 
 Four habits that catch the most common ways coding assistance goes wrong. They trade a little speed for a lot fewer regrets — for genuinely trivial one-liners, use judgment and don't over-apply them.
 
+This is the general layer. `debugging-discipline` goes deeper on root-causing a bug once something's actually broken, `test-discipline` on the tests themselves, and `git-hygiene` on the commit that carries the change.
+
 ## 1. Surface assumptions instead of guessing
 
 Before writing code against an ambiguous request:
