@@ -5,6 +5,7 @@ name: a11y-pass
 description: Use when building or reviewing a web UI for accessibility — keyboard navigation, screen reader semantics, focus management, or an explicit "accessibility pass"/"a11y review" request. Complements frontend-taste's craft-floor contrast check with the parts a purely visual review misses.
 # License this skill's content is released under
 license: MIT
+
 ---
 
 # Accessibility Pass
