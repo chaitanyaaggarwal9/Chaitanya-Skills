@@ -1,6 +1,6 @@
 ---
 name: coding-discipline
-description: Behavioral guardrails for writing, reviewing, or refactoring code so it doesn't drift into common LLM failure modes — overcomplicating simple tasks, silently guessing at ambiguous requirements, rewriting code nobody asked to change, or declaring something "done" without a way to check. Use this whenever a coding task is being planned, written, or reviewed, even if the user didn't ask for a style guide explicitly.
+description: Use when planning, writing, reviewing, or refactoring code — even if the user didn't ask for a style guide explicitly — to avoid common LLM failure modes, namely overcomplicating simple tasks, silently guessing at ambiguous requirements, rewriting code nobody asked to change, or declaring something "done" without a way to check.
 license: MIT
 ---
 

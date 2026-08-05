@@ -53,4 +53,4 @@ Body/placeholder text ≥ 4.5:1 contrast, large text ≥ 3:1 (same bar as `front
 
 - Tab through the entire flow with no mouse — can you reach and operate everything?
 - Run a screen reader once through the critical path (VoiceOver/NVDA), not just the automated audit.
-- An automated tool (axe, Lighthouse) is a floor, not a ceiling — it catches roughly a third of real issues. Passing it is the minimum bar, not proof of done.
+- An automated tool (axe, Lighthouse) is a floor, not a ceiling — it only catches a minority of real issues (anything requiring judgment, like whether alt text is actually meaningful, is invisible to it). Passing it is the minimum bar, not proof of done.

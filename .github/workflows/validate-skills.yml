@@ -13,6 +13,14 @@ on:
       - "scripts/validate_skills.py"
       - ".github/workflows/validate-skills.yml"
 
+# Explicit least-privilege token scope. Without this block the job falls back
+# to the repo's default GITHUB_TOKEN permissions, which can be broader than
+# this workflow needs — it only reads code to run the validator, it never
+# writes anything back. Flagged by GitHub code scanning (CodeQL) as alert #1
+# ("Workflow does not contain permissions") if omitted.
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
