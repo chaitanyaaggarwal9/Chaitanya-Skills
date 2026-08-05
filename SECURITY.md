@@ -2,7 +2,7 @@
 
 ## Scope
 
-This repository contains [Claude Code](https://claude.com/claude-code) skills : Markdown instruction files (`SKILL.md`) that Claude reads and follows, not executable software. There are no versioned releases to track and no traditional runtime to patch, but a skill's instructions still run with whatever permissions the invoking Claude Code session has, so a bad instruction is a real risk, not just a documentation error.
+This repository contains [Claude Code](https://claude.com/claude-code) skills — Markdown instruction files (`SKILL.md`) that Claude reads and follows, not executable software. There are no versioned releases to track and no traditional runtime to patch, but a skill's instructions still run with whatever permissions the invoking Claude Code session has, so a bad instruction is a real risk, not just a documentation error.
 
 Treat as a security issue anything where following a skill as written would:
 
