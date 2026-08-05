@@ -2,6 +2,7 @@
 """
 Validate every skills/*/SKILL.md in this repo.
 
+
 Checks, per skill:
   - SKILL.md exists and is valid UTF-8
   - Frontmatter is present and parses as YAML
