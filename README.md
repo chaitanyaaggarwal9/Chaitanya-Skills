@@ -10,6 +10,7 @@ A collection of [Claude Code](https://claude.com/claude-code) Skills — package
 |---|---|
 | [`coding-discipline`](skills/coding-discipline/SKILL.md) | Behavioral guardrails for writing, reviewing, or refactoring code — surface assumptions instead of guessing, default to the smallest working solution, make surgical edits, define "done" before starting. |
 | [`frontend-taste`](skills/frontend-taste/SKILL.md) | A workflow for frontend visual work — landing pages, dashboards, portfolios, components — covering how to read a design brief, when to reach for a real design system vs. a custom aesthetic, how to make animation decisions, and a pre-ship quality checklist. |
+| [`skill-authoring`](skills/skill-authoring/SKILL.md) | Guidance for writing a new Claude Code skill well — deciding whether something should be a skill at all, writing a description that actually triggers, keeping `SKILL.md` short with reference files for overflow, and a pre-ship hygiene pass. |
 
 ## What a skill is
 
