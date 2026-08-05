@@ -2,7 +2,7 @@
 
 [![Validate skills](https://github.com/chaitanyaaggarwal9/Chaitanya-Skills/actions/workflows/validate-skills.yml/badge.svg)](https://github.com/chaitanyaaggarwal9/Chaitanya-Skills/actions/workflows/validate-skills.yml)
 
-A collection of [Claude Code](https://claude.com/claude-code) Skills — packaged instructions that give Claude a repeatable workflow for a specific kind of task, instead of relying on it to reinvent an approach every time.
+A collection of [Claude Code](https://claude.com/claude-code) Skills: packaged instructions that give Claude a repeatable workflow for a specific kind of task, instead of relying on it to reinvent an approach every time.
 
 ## What's in here
 
