@@ -11,6 +11,7 @@ A skill earns a place in this repo if it's:
 
 If you're unsure whether something belongs, that uncertainty is usually the answer: keep it out until it's been used for real and proven itself.
 
+
 ## Structure
 
 ```
